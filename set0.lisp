@@ -97,7 +97,7 @@
 		((null lst2) new-lst2)
 		((equals (car new-lst2) (car )))
 	))
-;;TO-DO: finish function
+
 
 (defun countx (lst2)
   (setq duplicate-removed-lst (remove-duplicates lst2))
@@ -116,3 +116,21 @@
    )
   )
 
+(defun make-big-list (lst1 lst2)
+  (cons lst lst2)
+  )
+
+
+
+(defun extract-all-symbols (big-list final-list)
+  (setq symbol-list (remove-duplicates big-list))
+  (cond
+   ((null symbol-list) final-list)
+   ;;((8 car) (1 bus) (3 train))
+   ;;(car bus train)
+   ;;list1 all element cadr = list2 car?
+   ;;if yes, final-list add count+element
+   (())
+   )
+  
+  )
