@@ -1,4 +1,5 @@
 
+
 (defun count-occur (s lst)
 	(count-occur-helper s lst 0)
 )
@@ -74,5 +75,26 @@
 		
 		c)) 
 
+(defun fib-list-implementation (n)
+		(let (
+			(fib-list '(1 0)))
+
+		(loop for i from 2 to n do
+			(cons (+ (car fib-list) (cadr fib-list)) fib-list))
+
+			fib-list))
 
 
+;;--------------------------------------------------------------------------------
+;;6.
+(defun merge-occurence-counts (lst1 lst2)
+
+)
+
+(defun make-second-list (lst2 count)	
+	(setq new-lst2 (remove-duplicates lst2))
+	(cond
+		((null lst2) new-lst2)
+		((equals (car new-lst2) (car )))
+	))
+;;TO-DO: finish function
