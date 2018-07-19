@@ -98,3 +98,21 @@
 		((equals (car new-lst2) (car )))
 	))
 ;;TO-DO: finish function
+
+(defun countx (lst2)
+  (setq duplicate-removed-lst (remove-duplicates lst2))
+  (setq counted-lst '())
+  (count-occurences-in-second-list lst2 duplicate-removed-lst counted-lst)
+  )
+
+(defun count-occurences-in-second-list (lst2 duplicate-removed-lst counted-lst2)
+  
+  (cond
+   ((null duplicate-removed-lst) counted-lst2)
+   ((listp lst2) 
+    (cons (list (count (car duplicate-removed-lst) lst2) (car duplicate-removed-lst)) 
+          (count-occurences-in-second-list lst2 (cdr duplicate-removed-lst) counted-lst2)))
+   
+   )
+  )
+
