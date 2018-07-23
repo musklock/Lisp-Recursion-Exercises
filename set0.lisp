@@ -3,7 +3,7 @@
 (defun count-occur (s lst)
 	(count-occur-helper s lst 0)
 )
-
+;;bring the cursor back 
 (defun count-occur-helper (s lst num)
 	(cond
 		((null lst) num)
